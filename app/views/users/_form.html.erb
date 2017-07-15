@@ -1,0 +1,14 @@
+<%= bootstrap_form_for @user do |form| %>
+
+  <%= form.text_field :email, type: "email", required: "true" %>
+
+  <%= form.password_field :password, required: true %>
+
+  <%= form.submit "Sign up", class: "btn btn-primary" %>
+
+  <div class="other-links">
+    </br>
+    <%= link_to t(".sign_in"), sign_in_path %>
+  </div>
+<% end %>
+
