@@ -1,0 +1,22 @@
+<%= form_for @patient do |f| %>
+<p>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name, placeholder: "First name" %>
+</p>
+<p>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name, placeholder: "Last name" %>
+</p>
+<p>
+  <%= f.label :age %>
+  <%= f.text_field :age, placeholder: "Age" %>
+</p>
+<p>
+  <%= f.label :gender %>
+  <%= f.select :gender,["Male", "Female"] %>
+</p>
+
+  <%= f.hidden_field :user_id, value: current_user.id %>
+
+  <%= f.submit %>
+<% end %>

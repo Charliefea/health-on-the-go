@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resource :messages do
     get 'reply'
   end
+  root to: "patients#index"
+  resources :patients
 end
