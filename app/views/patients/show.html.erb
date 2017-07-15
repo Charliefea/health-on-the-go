@@ -1,0 +1,23 @@
+<p>
+  <%= @patient.first_name %>
+</p>
+
+<p>
+  <%= @patient.last_name %>
+</p>
+
+<p>
+  <%= @patient.age %>
+</p>
+
+<p>
+  <%= @patient.gender %>
+</p>
+
+<%= form_for [@patient, MedicalRecord.new] do |f| %>
+  <%= f.label :note %>
+  <%= f.text_area :note %>
+
+  <%= f.hidden_field :patient_id, value: @patient.id %>
+  <%= f.submit "Submit" %>
+<% end %>
