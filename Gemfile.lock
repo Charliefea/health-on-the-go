@@ -219,11 +219,8 @@ DEPENDENCIES
   capybara
   clearance
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
   dotenv-rails
-=======
   factory_girl_rails
->>>>>>> f5e5a1b0d1e9bd5174508f19cc2af5c85e523e4b
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
