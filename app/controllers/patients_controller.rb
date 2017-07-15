@@ -15,6 +15,12 @@ class PatientsController < ApplicationController
   end
 
   def index
+    @patients = Patient.where(user_id: current_user.id)
+  end
+
+  def show
+    # @patient = Patient.find(params[:id])
+    render json: {a: 1}
   end
 
   private
