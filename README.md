@@ -33,7 +33,7 @@ Health on the Go app for AngelHack Hackathon
 
 ## Why should this idea win?
 
-**Better Outcomes for Patients** -
+**Better Outcomes for Patients** - 
 
 **Eliminate Pain Point for Rural Doctors** - Having access to patient history and patient test results in real time give Health Care professionals a better understands
 
@@ -55,7 +55,10 @@ Health on the Go app for AngelHack Hackathon
 * **Technology used:** Ruby on Rails, Twilio API
 
 **UI/UX**
-* We spoke to a doctor in Nigeria who highlighted the difficulties he has with treating patients in rural areas
+* We spoke to a doctor in Nigeria who highlighted the difficulties he has with treating patients in rural areas. The things we had to take into account:
+  * Limiting queries to only vital information so that length of texts can be kept short
+  * Ease of use for patient information input from admin teams
+  * Ease of use in querying the data
 
 **Originality**
 * While leaps have been made in the rural healthcare space, such as tele-health (which allows rural doctors to communicate with specialists to obtain a better diagnosis), there has been little done to improve recording and accessing patients' data in rural areas.
