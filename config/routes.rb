@@ -16,6 +16,9 @@ Rails.application.routes.draw do
 
   resource :messages do
     get 'reply'
+    collection do
+      post 'receive'
+    end
   end
 
   resources :patients do
