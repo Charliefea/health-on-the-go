@@ -11,6 +11,9 @@
 <h4>Gender</h4>
 <p><%= @patient.gender %></p>
 
+<h4>Blood type</h4>
+<p><%= @patient.bloodtype %></p>
+
 </br>
 
 <h3>Add a new record for this patient</h3>
@@ -18,5 +21,5 @@
   <%= f.text_area :note %>
 
   <%= f.hidden_field :patient_id, value: @patient.id %>
-  <%= f.submit "Save Medical Record" %>
+  <%= f.submit "Save Medical Record", class: "btn btn-primary" %>
 <% end %>
