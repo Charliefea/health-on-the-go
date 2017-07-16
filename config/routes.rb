@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   root to: "patients#index"
 
   resource :messages do
-    get 'reply'
     collection do
       post 'receive'
     end
