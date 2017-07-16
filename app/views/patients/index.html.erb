@@ -1,9 +1,20 @@
-<ul>
-<% @patients.each do |patient| %>
-  <li>
-    <%= link_to "#{patient.first_name} #{patient.last_name}", patient_path(patient) %>
-  </li>
-<% end %>
-</ul>
+<%= button_to "New Patient", new_patient_path, class: "btn btn-primary", method: :get %>
+</br>
+<div class="table-responsive">
+<table class="table table-hover table-condensed">
+  <thead>
+    <th>Patient ID</th>
+    <th>Full Name</th>
+  </thead>
 
-<%= button_to "New Patient", new_patient_path, method: :get %>
+<% @patients.each do |patient| %>
+  <td>
+    #<%= patient.id %>
+  </td>
+  <td>
+    <%= link_to "#{patient.first_name} #{patient.last_name}", patient_path(patient) %>
+  </td>
+<% end %>
+
+</table>
+</div>
