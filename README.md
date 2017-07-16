@@ -33,9 +33,9 @@ Health on the Go app for AngelHack Hackathon
 
 ## Why should this idea win?
 
-**Better Outcomes for Patients** - 
+**Better Outcomes for Patients** - Lack of access to their history and medical data affects treatment chances of patients considerably. Removing this barrier could increase their chances of recovery.
 
-**Eliminate Pain Point for Rural Doctors** - Having access to patient history and patient test results in real time give Health Care professionals a better understands
+**Eliminate Pain Point for Rural Doctors** - Having access to patient history and patient test results in real time give Health Care professionals a better understanding of the most effective treatment to administer. 
 
 **Better Understanding of Health Care trends** - With more effective data collection, more in depth analysis about community health and trends can be done.
 
