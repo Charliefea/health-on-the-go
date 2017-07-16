@@ -1,0 +1,15 @@
+<%= bootstrap_form_for @patient do |f| %>
+  <%= f.text_field :first_name, placeholder: "First name", required: "true" %>
+
+  <%= f.text_field :last_name, placeholder: "Last name", required: "true"%>
+
+  <%= f.text_field :age, placeholder: "Age", required: "true" %>
+
+  <%= f.select :gender,["Male", "Female"] %>
+
+  <%= f.select :bloodtype, ["AB", "AB-", "A+", "A-", "B+", "B-", "O+", "O-"] %>
+
+  <%= f.hidden_field :user_id, value: current_user.id %>
+
+  <%= f.submit "Register patient" %>
+<% end %>
