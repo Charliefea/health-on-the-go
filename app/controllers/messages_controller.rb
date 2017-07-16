@@ -1,12 +1,16 @@
 require 'twilio-ruby'
 
 class MessagesController < ApplicationController
-  def reply
+  skip_before_filter :verify_authenticity_token
+
+  def receive
+    message_body = params['Body']
+    patient_query = Patient.find_by(first_name: message_body)
     boot_twilio
     sms = @client.messages.create(
-      body: "dotenv magic",
-      to: ENV['MY_NUMBER'],
-      from: ENV['TWILIO_NUMBER'])
+      body: patient_query.bloodtype,
+      to: "+447474030436",
+      from: "+441202286031")
   end
 
   private
