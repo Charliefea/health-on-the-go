@@ -9,8 +9,8 @@ class MessagesController < ApplicationController
     boot_twilio
     sms = @client.messages.create(
       body: patient_query.bloodtype,
-      to: "+447474030436",
-      from: "+441202286031")
+        to: ENV['MY_NUMBER'],
+      from: ENV['TWILIO_NUMBER'])
   end
 
   private
