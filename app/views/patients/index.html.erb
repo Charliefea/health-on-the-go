@@ -8,12 +8,14 @@
   </thead>
 
 <% @patients.each do |patient| %>
+<tr>
   <td>
     #<%= patient.id %>
   </td>
   <td>
     <%= link_to "#{patient.first_name} #{patient.last_name}", patient_path(patient) %>
   </td>
+</tr>
 <% end %>
 
 </table>

@@ -5,6 +5,8 @@ FactoryGirl.define do
 
   factory :user do
     email
-    password "password"
+    password  "password"
+    fullname  "dr healthtogo"
+    telephone "12345677"
   end
 end

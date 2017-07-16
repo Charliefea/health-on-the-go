@@ -1,5 +1,7 @@
 <%= bootstrap_form_for @user do |form| %>
 
+  <%= form.text_field :fullname, required: "true" %>
+
   <%= form.text_field :email, type: "email", required: "true" %>
 
   <%= form.password_field :password, required: true %>
